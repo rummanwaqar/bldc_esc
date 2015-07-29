@@ -43,7 +43,7 @@
 <layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
@@ -101,66 +101,69 @@
 &lt;body&gt; Manufacturer Part Number: DRV8302DCAR &lt;/body&gt;
 Three Phase Pre-Driver with Dual Current Shunt Amplifiers and Buck Regulator –
 Hardware Controlled</description>
-<wire x1="-3.1" y1="6.8" x2="3.1" y2="6.8" width="0.127" layer="21"/>
-<wire x1="3.1" y1="6.8" x2="3.1" y2="-7.3" width="0.127" layer="21"/>
-<wire x1="3.1" y1="-7.3" x2="-3.1" y2="-7.3" width="0.127" layer="21"/>
-<wire x1="-3.1" y1="-7.3" x2="-3.1" y2="6.8" width="0.127" layer="21"/>
-<smd name="P$1" x="-4" y="6.5" dx="2.1" dy="0.27" layer="1"/>
-<smd name="P$2" x="-4" y="6" dx="2.1" dy="0.27" layer="1"/>
-<smd name="P$3" x="-4" y="5.5" dx="2.1" dy="0.27" layer="1"/>
-<smd name="P$4" x="-4" y="5" dx="2.1" dy="0.27" layer="1"/>
-<smd name="P$5" x="-4" y="4.5" dx="2.1" dy="0.27" layer="1"/>
-<smd name="P$6" x="-4" y="4" dx="2.1" dy="0.27" layer="1"/>
-<smd name="P$7" x="-4" y="3.5" dx="2.1" dy="0.27" layer="1"/>
-<smd name="P$8" x="-4" y="3" dx="2.1" dy="0.27" layer="1"/>
-<smd name="P$9" x="-4" y="2.5" dx="2.1" dy="0.27" layer="1"/>
-<smd name="P$10" x="-4" y="2" dx="2.1" dy="0.27" layer="1"/>
-<smd name="P$11" x="-4" y="1.5" dx="2.1" dy="0.27" layer="1"/>
-<smd name="P$12" x="-4" y="1" dx="2.1" dy="0.27" layer="1"/>
-<smd name="P$13" x="-4" y="0.5" dx="2.1" dy="0.27" layer="1"/>
-<smd name="P$14" x="-4" y="0" dx="2.1" dy="0.27" layer="1"/>
-<smd name="P$15" x="-4" y="-0.5" dx="2.1" dy="0.27" layer="1"/>
-<smd name="P$16" x="-4" y="-1" dx="2.1" dy="0.27" layer="1"/>
-<smd name="P$17" x="-4" y="-1.5" dx="2.1" dy="0.27" layer="1"/>
-<smd name="P$18" x="-4" y="-2" dx="2.1" dy="0.27" layer="1"/>
-<smd name="P$19" x="-4" y="-2.5" dx="2.1" dy="0.27" layer="1"/>
-<smd name="P$20" x="-4" y="-3" dx="2.1" dy="0.27" layer="1"/>
-<smd name="P$21" x="-4" y="-3.5" dx="2.1" dy="0.27" layer="1"/>
-<smd name="P$22" x="-4" y="-4" dx="2.1" dy="0.27" layer="1"/>
-<smd name="P$23" x="-4" y="-4.5" dx="2.1" dy="0.27" layer="1"/>
-<smd name="P$24" x="-4" y="-5" dx="2.1" dy="0.27" layer="1"/>
-<smd name="P$25" x="-4" y="-5.5" dx="2.1" dy="0.27" layer="1"/>
-<smd name="P$26" x="-4" y="-6" dx="2.1" dy="0.27" layer="1"/>
-<smd name="P$27" x="-4" y="-6.5" dx="2.1" dy="0.27" layer="1"/>
-<smd name="P$28" x="-4" y="-7" dx="2.1" dy="0.27" layer="1"/>
-<smd name="P$29" x="4" y="-7" dx="2.1" dy="0.27" layer="1"/>
-<smd name="P$30" x="4" y="-6.5" dx="2.1" dy="0.27" layer="1"/>
-<smd name="P$31" x="4" y="-6" dx="2.1" dy="0.27" layer="1"/>
-<smd name="P$32" x="4" y="-5.5" dx="2.1" dy="0.27" layer="1"/>
-<smd name="P$33" x="4" y="-5" dx="2.1" dy="0.27" layer="1"/>
-<smd name="P$34" x="4" y="-4.5" dx="2.1" dy="0.27" layer="1"/>
-<smd name="P$35" x="4" y="-4" dx="2.1" dy="0.27" layer="1"/>
-<smd name="P$36" x="4" y="-3.5" dx="2.1" dy="0.27" layer="1"/>
-<smd name="P$37" x="4" y="-3" dx="2.1" dy="0.27" layer="1"/>
-<smd name="P$38" x="4" y="-2.5" dx="2.1" dy="0.27" layer="1"/>
-<smd name="P$39" x="4" y="-2" dx="2.1" dy="0.27" layer="1"/>
-<smd name="P$40" x="4" y="-1.5" dx="2.1" dy="0.27" layer="1"/>
-<smd name="P$41" x="4" y="-1" dx="2.1" dy="0.27" layer="1"/>
-<smd name="P$42" x="4" y="-0.5" dx="2.1" dy="0.27" layer="1"/>
-<smd name="P$43" x="4" y="0" dx="2.1" dy="0.27" layer="1"/>
-<smd name="P$44" x="4" y="0.5" dx="2.1" dy="0.27" layer="1"/>
-<smd name="P$45" x="4" y="1" dx="2.1" dy="0.27" layer="1"/>
-<smd name="P$46" x="4" y="1.5" dx="2.1" dy="0.27" layer="1"/>
-<smd name="P$47" x="4" y="2" dx="2.1" dy="0.27" layer="1"/>
-<smd name="P$48" x="4" y="2.5" dx="2.1" dy="0.27" layer="1"/>
-<smd name="P$49" x="4" y="3" dx="2.1" dy="0.27" layer="1"/>
-<smd name="P$50" x="4" y="3.5" dx="2.1" dy="0.27" layer="1"/>
-<smd name="P$51" x="4" y="4" dx="2.1" dy="0.27" layer="1"/>
-<smd name="P$52" x="4" y="4.5" dx="2.1" dy="0.27" layer="1"/>
-<smd name="P$53" x="4" y="5" dx="2.1" dy="0.27" layer="1"/>
-<smd name="P$54" x="4" y="5.5" dx="2.1" dy="0.27" layer="1"/>
-<smd name="P$55" x="4" y="6" dx="2.1" dy="0.27" layer="1"/>
-<smd name="P$56" x="4" y="6.5" dx="2.1" dy="0.27" layer="1"/>
+<smd name="P$1" x="-3.75" y="6.75" dx="2.1" dy="0.27" layer="1"/>
+<smd name="P$2" x="-3.75" y="6.25" dx="2.1" dy="0.27" layer="1"/>
+<smd name="P$3" x="-3.75" y="5.75" dx="2.1" dy="0.27" layer="1"/>
+<smd name="P$4" x="-3.75" y="5.25" dx="2.1" dy="0.27" layer="1"/>
+<smd name="P$5" x="-3.75" y="4.75" dx="2.1" dy="0.27" layer="1"/>
+<smd name="P$6" x="-3.75" y="4.25" dx="2.1" dy="0.27" layer="1"/>
+<smd name="P$7" x="-3.75" y="3.75" dx="2.1" dy="0.27" layer="1"/>
+<smd name="P$8" x="-3.75" y="3.25" dx="2.1" dy="0.27" layer="1"/>
+<smd name="P$9" x="-3.75" y="2.75" dx="2.1" dy="0.27" layer="1"/>
+<smd name="P$10" x="-3.75" y="2.25" dx="2.1" dy="0.27" layer="1"/>
+<smd name="P$11" x="-3.75" y="1.75" dx="2.1" dy="0.27" layer="1"/>
+<smd name="P$12" x="-3.75" y="1.25" dx="2.1" dy="0.27" layer="1"/>
+<smd name="P$13" x="-3.75" y="0.75" dx="2.1" dy="0.27" layer="1"/>
+<smd name="P$14" x="-3.75" y="0.25" dx="2.1" dy="0.27" layer="1"/>
+<smd name="P$15" x="-3.75" y="-0.25" dx="2.1" dy="0.27" layer="1"/>
+<smd name="P$16" x="-3.75" y="-0.75" dx="2.1" dy="0.27" layer="1"/>
+<smd name="P$17" x="-3.75" y="-1.25" dx="2.1" dy="0.27" layer="1"/>
+<smd name="P$18" x="-3.75" y="-1.75" dx="2.1" dy="0.27" layer="1"/>
+<smd name="P$19" x="-3.75" y="-2.25" dx="2.1" dy="0.27" layer="1"/>
+<smd name="P$20" x="-3.75" y="-2.75" dx="2.1" dy="0.27" layer="1"/>
+<smd name="P$21" x="-3.75" y="-3.25" dx="2.1" dy="0.27" layer="1"/>
+<smd name="P$22" x="-3.75" y="-3.75" dx="2.1" dy="0.27" layer="1"/>
+<smd name="P$23" x="-3.75" y="-4.25" dx="2.1" dy="0.27" layer="1"/>
+<smd name="P$24" x="-3.75" y="-4.75" dx="2.1" dy="0.27" layer="1"/>
+<smd name="P$25" x="-3.75" y="-5.25" dx="2.1" dy="0.27" layer="1"/>
+<smd name="P$26" x="-3.75" y="-5.75" dx="2.1" dy="0.27" layer="1"/>
+<smd name="P$27" x="-3.75" y="-6.25" dx="2.1" dy="0.27" layer="1"/>
+<smd name="P$28" x="-3.75" y="-6.75" dx="2.1" dy="0.27" layer="1"/>
+<smd name="P$29" x="3.8" y="-6.75" dx="2.1" dy="0.27" layer="1"/>
+<smd name="P$30" x="3.8" y="-6.25" dx="2.1" dy="0.27" layer="1"/>
+<smd name="P$31" x="3.8" y="-5.75" dx="2.1" dy="0.27" layer="1"/>
+<smd name="P$32" x="3.8" y="-5.25" dx="2.1" dy="0.27" layer="1"/>
+<smd name="P$33" x="3.8" y="-4.75" dx="2.1" dy="0.27" layer="1"/>
+<smd name="P$34" x="3.8" y="-4.25" dx="2.1" dy="0.27" layer="1"/>
+<smd name="P$35" x="3.8" y="-3.75" dx="2.1" dy="0.27" layer="1"/>
+<smd name="P$36" x="3.8" y="-3.25" dx="2.1" dy="0.27" layer="1"/>
+<smd name="P$37" x="3.8" y="-2.75" dx="2.1" dy="0.27" layer="1"/>
+<smd name="P$38" x="3.8" y="-2.25" dx="2.1" dy="0.27" layer="1"/>
+<smd name="P$39" x="3.8" y="-1.75" dx="2.1" dy="0.27" layer="1"/>
+<smd name="P$40" x="3.8" y="-1.25" dx="2.1" dy="0.27" layer="1"/>
+<smd name="P$41" x="3.8" y="-0.75" dx="2.1" dy="0.27" layer="1"/>
+<smd name="P$42" x="3.8" y="-0.25" dx="2.1" dy="0.27" layer="1"/>
+<smd name="P$43" x="3.8" y="0.25" dx="2.1" dy="0.27" layer="1"/>
+<smd name="P$44" x="3.8" y="0.75" dx="2.1" dy="0.27" layer="1"/>
+<smd name="P$45" x="3.8" y="1.25" dx="2.1" dy="0.27" layer="1"/>
+<smd name="P$46" x="3.8" y="1.75" dx="2.1" dy="0.27" layer="1"/>
+<smd name="P$47" x="3.8" y="2.25" dx="2.1" dy="0.27" layer="1"/>
+<smd name="P$48" x="3.8" y="2.75" dx="2.1" dy="0.27" layer="1"/>
+<smd name="P$49" x="3.8" y="3.25" dx="2.1" dy="0.27" layer="1"/>
+<smd name="P$50" x="3.8" y="3.75" dx="2.1" dy="0.27" layer="1"/>
+<smd name="P$51" x="3.8" y="4.25" dx="2.1" dy="0.27" layer="1"/>
+<smd name="P$52" x="3.8" y="4.75" dx="2.1" dy="0.27" layer="1"/>
+<smd name="P$53" x="3.8" y="5.25" dx="2.1" dy="0.27" layer="1"/>
+<smd name="P$54" x="3.8" y="5.75" dx="2.1" dy="0.27" layer="1"/>
+<smd name="P$55" x="3.8" y="6.25" dx="2.1" dy="0.27" layer="1"/>
+<smd name="P$56" x="3.8" y="6.75" dx="2.1" dy="0.27" layer="1"/>
+<wire x1="3" y1="7" x2="3" y2="-7" width="0.127" layer="51"/>
+<wire x1="3" y1="-7" x2="-3" y2="-7" width="0.127" layer="51"/>
+<wire x1="-3" y1="-7" x2="-3" y2="7" width="0.127" layer="51"/>
+<wire x1="-3" y1="7" x2="3" y2="7" width="0.127" layer="51"/>
+<smd name="GND" x="0" y="0" dx="5.1" dy="14" layer="1"/>
+<text x="-2.95" y="-8.75" size="1.27" layer="27">&gt;Value</text>
+<text x="-2.9" y="7.55" size="1.27" layer="25">&gt;Name</text>
 </package>
 <package name="0603">
 <wire x1="0" y1="0.8" x2="0" y2="-0.8" width="0.05" layer="21"/>
@@ -253,66 +256,67 @@ Hardware Controlled</description>
 &lt;body&gt; Manufacturer Part Number: DRV8302DCAR &lt;/body&gt;
 Three Phase Pre-Driver with Dual Current Shunt Amplifiers and Buck Regulator –
 Hardware Controlled</description>
-<wire x1="0" y1="7.05" x2="0" y2="-7.05" width="0.254" layer="94"/>
-<wire x1="0" y1="-7.05" x2="6.2" y2="-7.05" width="0.254" layer="94"/>
-<wire x1="6.2" y1="-7.05" x2="6.2" y2="7.05" width="0.254" layer="94"/>
-<wire x1="6.2" y1="7.05" x2="0" y2="7.05" width="0.254" layer="94"/>
-<pin name="RT_CLK" x="-5" y="6.5" length="middle"/>
-<pin name="COMP" x="-5" y="6" length="middle"/>
-<pin name="VSENSE" x="-5" y="5.5" length="middle"/>
-<pin name="PWRGD" x="-5" y="5" length="middle"/>
-<pin name="~OCTW" x="-5" y="4.5" length="middle"/>
-<pin name="~FAULT" x="-5" y="4" length="middle"/>
-<pin name="DTC" x="-5" y="3.5" length="middle"/>
-<pin name="M_PWM" x="-5" y="3" length="middle"/>
-<pin name="M_OC" x="-5" y="2.5" length="middle"/>
-<pin name="GAIN" x="-5" y="2" length="middle"/>
-<pin name="OC_ADJ" x="-5" y="1.5" length="middle"/>
-<pin name="DC_CAL" x="-5" y="1" length="middle"/>
-<pin name="GVDD" x="-5" y="0.5" length="middle"/>
-<pin name="CP1" x="-5" y="0" length="middle"/>
-<pin name="CP2" x="-5" y="-0.5" length="middle"/>
-<pin name="EN_GATE" x="-5" y="-1" length="middle"/>
-<pin name="INH_A" x="-5" y="-1.5" length="middle"/>
-<pin name="INL_A" x="-5" y="-2" length="middle"/>
-<pin name="INH_B" x="-5" y="-2.5" length="middle"/>
-<pin name="INL_B" x="-5" y="-3" length="middle"/>
-<pin name="INH_C" x="-5" y="-3.5" length="middle"/>
-<pin name="INL_C" x="-5" y="-4" length="middle"/>
-<pin name="DVDD" x="-5" y="-4.5" length="middle"/>
-<pin name="REF" x="-5" y="-5" length="middle"/>
-<pin name="SO1" x="-5" y="-5.5" length="middle"/>
-<pin name="SO2" x="-5" y="-6" length="middle"/>
-<pin name="AVDD" x="-5" y="-6.5" length="middle"/>
-<pin name="AGND" x="-5" y="-7" length="middle"/>
-<pin name="PVDD_1" x="11" y="-7" length="middle" rot="R180"/>
-<pin name="SP2" x="11" y="-6.5" length="middle" rot="R180"/>
-<pin name="SN2" x="11" y="-6" length="middle" rot="R180"/>
-<pin name="SP1" x="11" y="-5.5" length="middle" rot="R180"/>
-<pin name="SN1" x="11" y="-5" length="middle" rot="R180"/>
-<pin name="SL_C" x="11" y="-4.5" length="middle" rot="R180"/>
-<pin name="GL_C" x="11" y="-4" length="middle" rot="R180"/>
-<pin name="SH_C" x="11" y="-3.5" length="middle" rot="R180"/>
-<pin name="GH_C" x="11" y="-3" length="middle" rot="R180"/>
-<pin name="BST_C" x="11" y="-2.5" length="middle" rot="R180"/>
-<pin name="SL_B" x="11" y="-2" length="middle" rot="R180"/>
-<pin name="GL_B" x="11" y="-1.5" length="middle" rot="R180"/>
-<pin name="SH_B" x="11" y="-1" length="middle" rot="R180"/>
-<pin name="GH_B" x="11" y="-0.5" length="middle" rot="R180"/>
-<pin name="BST_B" x="11" y="0" length="middle" rot="R180"/>
-<pin name="SL_A" x="11" y="0.5" length="middle" rot="R180"/>
-<pin name="GL_A" x="11" y="1" length="middle" rot="R180"/>
-<pin name="SH_A" x="11" y="1.5" length="middle" rot="R180"/>
-<pin name="GH_A" x="11" y="2" length="middle" rot="R180"/>
-<pin name="BST_A" x="11" y="2.5" length="middle" rot="R180"/>
-<pin name="BIAS" x="11" y="3" length="middle" rot="R180"/>
-<pin name="PH" x="11" y="3.5" length="middle" rot="R180"/>
-<pin name="PH2" x="11" y="4" length="middle" rot="R180"/>
-<pin name="BST_BK" x="11" y="4.5" length="middle" rot="R180"/>
-<pin name="PVDD_2" x="11" y="5" length="middle" rot="R180"/>
-<pin name="PVDD_2(2)" x="11" y="5.5" length="middle" rot="R180"/>
-<pin name="EN_BUCK" x="11" y="6" length="middle" rot="R180"/>
-<pin name="SS_TR" x="11" y="6.5" length="middle" rot="R180"/>
+<wire x1="-10.16" y1="40.64" x2="15.24" y2="40.64" width="0.254" layer="94"/>
+<wire x1="15.24" y1="40.64" x2="15.24" y2="-48.26" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-48.26" x2="-10.16" y2="-48.26" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-48.26" x2="-10.16" y2="40.64" width="0.254" layer="94"/>
+<pin name="!OCTW" x="-15.24" y="38.1" length="middle"/>
+<pin name="!FAULT" x="-15.24" y="35.56" length="middle"/>
+<pin name="EN_GATE" x="-15.24" y="33.02" length="middle"/>
+<pin name="DTC" x="-15.24" y="30.48" length="middle"/>
+<pin name="M_PWM" x="-15.24" y="27.94" length="middle"/>
+<pin name="M_OC" x="-15.24" y="25.4" length="middle"/>
+<pin name="GAIN" x="-15.24" y="22.86" length="middle"/>
+<pin name="OC_ADJ" x="-15.24" y="20.32" length="middle"/>
+<pin name="BIAS" x="-15.24" y="17.78" length="middle"/>
+<pin name="INH_A" x="-15.24" y="12.7" length="middle"/>
+<pin name="INL_A" x="-15.24" y="10.16" length="middle"/>
+<pin name="INH_B" x="-15.24" y="5.08" length="middle"/>
+<pin name="INL_B" x="-15.24" y="2.54" length="middle"/>
+<pin name="INH_C" x="-15.24" y="-2.54" length="middle"/>
+<pin name="INL_C" x="-15.24" y="-5.08" length="middle"/>
+<pin name="PVDD2" x="-15.24" y="-10.16" length="middle"/>
+<pin name="VSENSE" x="-15.24" y="-15.24" length="middle"/>
+<pin name="BST_BK" x="-15.24" y="-17.78" length="middle"/>
+<pin name="PH1" x="-15.24" y="-20.32" length="middle"/>
+<pin name="EN_BUCK" x="-15.24" y="-25.4" length="middle"/>
+<pin name="PWRGD" x="-15.24" y="-27.94" length="middle"/>
+<pin name="SS_TR" x="-15.24" y="-30.48" length="middle"/>
+<pin name="RT_CLK" x="-15.24" y="-33.02" length="middle"/>
+<pin name="COMP" x="-15.24" y="-35.56" length="middle"/>
+<pin name="AVDD" x="20.32" y="33.02" length="middle" rot="R180"/>
+<pin name="GVDD" x="20.32" y="35.56" length="middle" rot="R180"/>
+<pin name="PVDD1" x="20.32" y="38.1" length="middle" rot="R180"/>
+<pin name="CP1" x="-15.24" y="-38.1" length="middle"/>
+<pin name="CP2" x="-15.24" y="-40.64" length="middle"/>
+<pin name="PH2" x="-15.24" y="-22.86" length="middle"/>
+<pin name="GND" x="20.32" y="25.4" length="middle" rot="R180"/>
+<pin name="SO2" x="7.62" y="-53.34" length="middle" rot="R90"/>
+<pin name="SO1" x="-2.54" y="-53.34" length="middle" rot="R90"/>
+<pin name="AGND" x="20.32" y="27.94" length="middle" rot="R180"/>
+<pin name="PVDD2(2)" x="-15.24" y="-12.7" length="middle"/>
+<pin name="SP2" x="20.32" y="-33.02" length="middle" rot="R180"/>
+<pin name="SN2" x="20.32" y="-30.48" length="middle" rot="R180"/>
+<pin name="DC_CAL" x="20.32" y="-27.94" length="middle" rot="R180"/>
+<pin name="REF" x="20.32" y="-25.4" length="middle" rot="R180"/>
+<pin name="SP1" x="20.32" y="-22.86" length="middle" rot="R180"/>
+<pin name="SN1" x="20.32" y="-20.32" length="middle" rot="R180"/>
+<pin name="SL_C" x="20.32" y="-15.24" length="middle" rot="R180"/>
+<pin name="GL_C" x="20.32" y="-12.7" length="middle" rot="R180"/>
+<pin name="SH_C" x="20.32" y="-10.16" length="middle" rot="R180"/>
+<pin name="GH_C" x="20.32" y="-7.62" length="middle" rot="R180"/>
+<pin name="BST_C" x="20.32" y="-5.08" length="middle" rot="R180"/>
+<pin name="SL_B" x="20.32" y="-2.54" length="middle" rot="R180"/>
+<pin name="GL_B" x="20.32" y="0" length="middle" rot="R180"/>
+<pin name="SH_B" x="20.32" y="2.54" length="middle" rot="R180"/>
+<pin name="GH_B" x="20.32" y="5.08" length="middle" rot="R180"/>
+<pin name="BST_B" x="20.32" y="7.62" length="middle" rot="R180"/>
+<pin name="SL_A" x="20.32" y="10.16" length="middle" rot="R180"/>
+<pin name="GL_A" x="20.32" y="12.7" length="middle" rot="R180"/>
+<pin name="SA_A" x="20.32" y="15.24" length="middle" rot="R180"/>
+<pin name="GH_A" x="20.32" y="17.78" length="middle" rot="R180"/>
+<pin name="BST_A" x="20.32" y="20.32" length="middle" rot="R180"/>
+<pin name="DVDD" x="20.32" y="30.48" length="middle" rot="R180"/>
 </symbol>
 <symbol name="0603">
 <description>&lt;title&gt; Generic 0603 SMD &lt;/title&gt;</description>
@@ -430,62 +434,63 @@ Hardware Controlled</description>
 <devices>
 <device name="" package="DRV8302DCAR">
 <connects>
-<connect gate="G$1" pin="AGND" pad="P$28"/>
-<connect gate="G$1" pin="AVDD" pad="P$27"/>
-<connect gate="G$1" pin="BIAS" pad="P$49"/>
-<connect gate="G$1" pin="BST_A" pad="P$48"/>
-<connect gate="G$1" pin="BST_B" pad="P$43"/>
-<connect gate="G$1" pin="BST_BK" pad="P$52"/>
-<connect gate="G$1" pin="BST_C" pad="P$38"/>
-<connect gate="G$1" pin="COMP" pad="P$2"/>
-<connect gate="G$1" pin="CP1" pad="P$14"/>
-<connect gate="G$1" pin="CP2" pad="P$15"/>
-<connect gate="G$1" pin="DC_CAL" pad="P$12"/>
-<connect gate="G$1" pin="DTC" pad="P$7"/>
-<connect gate="G$1" pin="DVDD" pad="P$23"/>
-<connect gate="G$1" pin="EN_BUCK" pad="P$55"/>
-<connect gate="G$1" pin="EN_GATE" pad="P$16"/>
-<connect gate="G$1" pin="GAIN" pad="P$10"/>
-<connect gate="G$1" pin="GH_A" pad="P$47"/>
-<connect gate="G$1" pin="GH_B" pad="P$42"/>
-<connect gate="G$1" pin="GH_C" pad="P$37"/>
-<connect gate="G$1" pin="GL_A" pad="P$45"/>
-<connect gate="G$1" pin="GL_B" pad="P$40"/>
-<connect gate="G$1" pin="GL_C" pad="P$35"/>
-<connect gate="G$1" pin="GVDD" pad="P$13"/>
-<connect gate="G$1" pin="INH_A" pad="P$17"/>
-<connect gate="G$1" pin="INH_B" pad="P$19"/>
-<connect gate="G$1" pin="INH_C" pad="P$21"/>
-<connect gate="G$1" pin="INL_A" pad="P$18"/>
-<connect gate="G$1" pin="INL_B" pad="P$20"/>
-<connect gate="G$1" pin="INL_C" pad="P$22"/>
-<connect gate="G$1" pin="M_OC" pad="P$9"/>
-<connect gate="G$1" pin="M_PWM" pad="P$8"/>
-<connect gate="G$1" pin="OC_ADJ" pad="P$11"/>
-<connect gate="G$1" pin="PH" pad="P$50"/>
-<connect gate="G$1" pin="PH2" pad="P$51"/>
-<connect gate="G$1" pin="PVDD_1" pad="P$29"/>
-<connect gate="G$1" pin="PVDD_2" pad="P$53"/>
-<connect gate="G$1" pin="PVDD_2(2)" pad="P$54"/>
-<connect gate="G$1" pin="PWRGD" pad="P$4"/>
-<connect gate="G$1" pin="REF" pad="P$24"/>
-<connect gate="G$1" pin="RT_CLK" pad="P$1"/>
-<connect gate="G$1" pin="SH_A" pad="P$46"/>
-<connect gate="G$1" pin="SH_B" pad="P$41"/>
-<connect gate="G$1" pin="SH_C" pad="P$36"/>
-<connect gate="G$1" pin="SL_A" pad="P$44"/>
-<connect gate="G$1" pin="SL_B" pad="P$39"/>
-<connect gate="G$1" pin="SL_C" pad="P$34"/>
-<connect gate="G$1" pin="SN1" pad="P$33"/>
-<connect gate="G$1" pin="SN2" pad="P$31"/>
-<connect gate="G$1" pin="SO1" pad="P$25"/>
-<connect gate="G$1" pin="SO2" pad="P$26"/>
-<connect gate="G$1" pin="SP1" pad="P$32"/>
-<connect gate="G$1" pin="SP2" pad="P$30"/>
-<connect gate="G$1" pin="SS_TR" pad="P$56"/>
-<connect gate="G$1" pin="VSENSE" pad="P$3"/>
-<connect gate="G$1" pin="~FAULT" pad="P$6"/>
-<connect gate="G$1" pin="~OCTW" pad="P$5"/>
+<connect gate="G$1" pin="!FAULT" pad="P$2"/>
+<connect gate="G$1" pin="!OCTW" pad="P$1"/>
+<connect gate="G$1" pin="AGND" pad="P$34"/>
+<connect gate="G$1" pin="AVDD" pad="P$25"/>
+<connect gate="G$1" pin="BIAS" pad="P$9"/>
+<connect gate="G$1" pin="BST_A" pad="P$56"/>
+<connect gate="G$1" pin="BST_B" pad="P$51"/>
+<connect gate="G$1" pin="BST_BK" pad="P$18"/>
+<connect gate="G$1" pin="BST_C" pad="P$46"/>
+<connect gate="G$1" pin="COMP" pad="P$24"/>
+<connect gate="G$1" pin="CP1" pad="P$28"/>
+<connect gate="G$1" pin="CP2" pad="P$29"/>
+<connect gate="G$1" pin="DC_CAL" pad="P$38"/>
+<connect gate="G$1" pin="DTC" pad="P$4"/>
+<connect gate="G$1" pin="DVDD" pad="GND"/>
+<connect gate="G$1" pin="EN_BUCK" pad="P$20"/>
+<connect gate="G$1" pin="EN_GATE" pad="P$3"/>
+<connect gate="G$1" pin="GAIN" pad="P$7"/>
+<connect gate="G$1" pin="GH_A" pad="P$55"/>
+<connect gate="G$1" pin="GH_B" pad="P$50"/>
+<connect gate="G$1" pin="GH_C" pad="P$45"/>
+<connect gate="G$1" pin="GL_A" pad="P$53"/>
+<connect gate="G$1" pin="GL_B" pad="P$48"/>
+<connect gate="G$1" pin="GL_C" pad="P$43"/>
+<connect gate="G$1" pin="GND" pad="P$31"/>
+<connect gate="G$1" pin="GVDD" pad="P$26"/>
+<connect gate="G$1" pin="INH_A" pad="P$10"/>
+<connect gate="G$1" pin="INH_B" pad="P$12"/>
+<connect gate="G$1" pin="INH_C" pad="P$14"/>
+<connect gate="G$1" pin="INL_A" pad="P$11"/>
+<connect gate="G$1" pin="INL_B" pad="P$13"/>
+<connect gate="G$1" pin="INL_C" pad="P$15"/>
+<connect gate="G$1" pin="M_OC" pad="P$6"/>
+<connect gate="G$1" pin="M_PWM" pad="P$5"/>
+<connect gate="G$1" pin="OC_ADJ" pad="P$8"/>
+<connect gate="G$1" pin="PH1" pad="P$19"/>
+<connect gate="G$1" pin="PH2" pad="P$30"/>
+<connect gate="G$1" pin="PVDD1" pad="P$27"/>
+<connect gate="G$1" pin="PVDD2" pad="P$16"/>
+<connect gate="G$1" pin="PVDD2(2)" pad="P$35"/>
+<connect gate="G$1" pin="PWRGD" pad="P$21"/>
+<connect gate="G$1" pin="REF" pad="P$39"/>
+<connect gate="G$1" pin="RT_CLK" pad="P$23"/>
+<connect gate="G$1" pin="SA_A" pad="P$54"/>
+<connect gate="G$1" pin="SH_B" pad="P$49"/>
+<connect gate="G$1" pin="SH_C" pad="P$44"/>
+<connect gate="G$1" pin="SL_A" pad="P$52"/>
+<connect gate="G$1" pin="SL_B" pad="P$47"/>
+<connect gate="G$1" pin="SL_C" pad="P$42"/>
+<connect gate="G$1" pin="SN1" pad="P$41"/>
+<connect gate="G$1" pin="SN2" pad="P$37"/>
+<connect gate="G$1" pin="SO1" pad="P$33"/>
+<connect gate="G$1" pin="SO2" pad="P$32"/>
+<connect gate="G$1" pin="SP1" pad="P$40"/>
+<connect gate="G$1" pin="SP2" pad="P$36"/>
+<connect gate="G$1" pin="SS_TR" pad="P$22"/>
+<connect gate="G$1" pin="VSENSE" pad="P$17"/>
 </connects>
 <technologies>
 <technology name=""/>
