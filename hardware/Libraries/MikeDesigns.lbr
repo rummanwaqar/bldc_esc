@@ -332,7 +332,7 @@ Hardware Controlled</description>
 <pin name="BST_B" x="20.32" y="7.62" length="middle" rot="R180"/>
 <pin name="SL_A" x="20.32" y="10.16" length="middle" rot="R180"/>
 <pin name="GL_A" x="20.32" y="12.7" length="middle" rot="R180"/>
-<pin name="SA_A" x="20.32" y="15.24" length="middle" rot="R180"/>
+<pin name="SH_A" x="20.32" y="15.24" length="middle" rot="R180"/>
 <pin name="GH_A" x="20.32" y="17.78" length="middle" rot="R180"/>
 <pin name="BST_A" x="20.32" y="20.32" length="middle" rot="R180"/>
 <pin name="DVDD" x="20.32" y="30.48" length="middle" rot="R180"/>
@@ -507,7 +507,7 @@ Hardware Controlled</description>
 <connect gate="G$1" pin="PWRGD" pad="P$21"/>
 <connect gate="G$1" pin="REF" pad="P$39"/>
 <connect gate="G$1" pin="RT_CLK" pad="P$23"/>
-<connect gate="G$1" pin="SA_A" pad="P$54"/>
+<connect gate="G$1" pin="SH_A" pad="P$54"/>
 <connect gate="G$1" pin="SH_B" pad="P$49"/>
 <connect gate="G$1" pin="SH_C" pad="P$44"/>
 <connect gate="G$1" pin="SL_A" pad="P$52"/>
