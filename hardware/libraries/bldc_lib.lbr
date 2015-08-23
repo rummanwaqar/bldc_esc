@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -159,19 +159,19 @@
 <text x="2.54" y="-11.43" size="1.27" layer="21">S</text>
 </package>
 <package name="IRF7530_HEATSINK">
-<smd name="D1" x="-20.32" y="1.27" dx="19.812" dy="13.208" layer="1" rot="R90"/>
-<smd name="G1" x="-24.13" y="-13.8557" dx="0.7112" dy="3.556" layer="1"/>
-<smd name="S1" x="-22.86" y="-13.8557" dx="0.7112" dy="3.556" layer="1"/>
-<smd name="S2" x="-21.59" y="-13.8557" dx="0.7112" dy="3.556" layer="1"/>
-<smd name="S3" x="-19.05" y="-13.8557" dx="0.7112" dy="3.556" layer="1"/>
-<smd name="S4" x="-17.78" y="-13.8557" dx="0.7112" dy="3.556" layer="1"/>
-<smd name="S5" x="-16.51" y="-13.8557" dx="0.7112" dy="3.556" layer="1"/>
-<text x="-22.86" y="-5.08" size="1.27" layer="27">&gt;Value</text>
-<text x="-22.86" y="-7.62" size="1.27" layer="25">&gt;Name</text>
-<wire x1="-27.94" y1="11.43" x2="-12.7" y2="11.43" width="0.127" layer="21"/>
-<wire x1="-12.7" y1="11.43" x2="-12.7" y2="-16.51" width="0.127" layer="21"/>
-<wire x1="-12.7" y1="-16.51" x2="-27.94" y2="-16.51" width="0.127" layer="21"/>
-<wire x1="-27.94" y1="-16.51" x2="-27.94" y2="11.43" width="0.127" layer="21"/>
+<smd name="D1" x="0" y="1.27" dx="19.812" dy="13.208" layer="1" rot="R90"/>
+<smd name="G1" x="-3.81" y="-13.8557" dx="0.7112" dy="3.556" layer="1"/>
+<smd name="S1" x="-2.54" y="-13.8557" dx="0.7112" dy="3.556" layer="1"/>
+<smd name="S2" x="-1.27" y="-13.8557" dx="0.7112" dy="3.556" layer="1"/>
+<smd name="S3" x="1.27" y="-13.8557" dx="0.7112" dy="3.556" layer="1"/>
+<smd name="S4" x="2.54" y="-13.8557" dx="0.7112" dy="3.556" layer="1"/>
+<smd name="S5" x="3.81" y="-13.8557" dx="0.7112" dy="3.556" layer="1"/>
+<text x="-2.54" y="-5.08" size="1.27" layer="27">&gt;Value</text>
+<text x="-2.54" y="-7.62" size="1.27" layer="25">&gt;Name</text>
+<wire x1="-7.62" y1="11.43" x2="7.62" y2="11.43" width="0.127" layer="21"/>
+<wire x1="7.62" y1="11.43" x2="7.62" y2="-16.51" width="0.127" layer="21"/>
+<wire x1="7.62" y1="-16.51" x2="-7.62" y2="-16.51" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="-16.51" x2="-7.62" y2="11.43" width="0.127" layer="21"/>
 </package>
 <package name="DRV8302">
 <smd name="P$1" x="-3.75" y="6.75" dx="2.1" dy="0.27" layer="1"/>
