@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -248,6 +248,20 @@
 <rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
 <rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
 </package>
+<package name="R0603">
+<wire x1="-0.432" y1="-0.356" x2="0.432" y2="-0.356" width="0.1524" layer="51"/>
+<wire x1="0.432" y1="0.356" x2="-0.432" y2="0.356" width="0.1524" layer="51"/>
+<wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
+<smd name="1" x="-0.85" y="0" dx="1" dy="1.1" layer="1"/>
+<smd name="2" x="0.85" y="0" dx="1" dy="1.1" layer="1"/>
+<text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="0.4318" y1="-0.4318" x2="0.8382" y2="0.4318" layer="51"/>
+<rectangle x1="-0.8382" y1="-0.4318" x2="-0.4318" y2="0.4318" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MOSFET_N">
@@ -379,6 +393,18 @@
 <wire x1="15.24" y1="-5.08" x2="15.24" y2="5.08" width="0.254" layer="94"/>
 <wire x1="15.24" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
 </symbol>
+<symbol name="THERMISTOR">
+<wire x1="2.54" y1="1.016" x2="2.54" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-1.016" x2="-2.54" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-1.016" x2="-2.54" y2="1.016" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="1.016" x2="2.54" y2="1.016" width="0.254" layer="94"/>
+<wire x1="3.1496" y1="-2.032" x2="2.032" y2="-2.032" width="0.254" layer="94"/>
+<wire x1="2.032" y1="-2.032" x2="-2.032" y2="2.032" width="0.254" layer="94"/>
+<text x="-2.54" y="3.81" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-6.35" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="2" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="IRFS7530_HEATSINK">
@@ -502,6 +528,24 @@ Low Value (down to 0.0003 ), Surface Mount</description>
 <connect gate="G$1" pin="GND" pad="1"/>
 <connect gate="G$1" pin="VI" pad="3"/>
 <connect gate="G$1" pin="VOUT" pad="2 4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NCP18XH103F03RB">
+<description>&lt;h1&gt;NTC Thermistor&lt;/h1&gt;
+NTC Thermistors 10K OHM 1%</description>
+<gates>
+<gate name="G$1" symbol="THERMISTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="R0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -5051,6 +5095,20 @@ In this library the device names are the same as the pin names of the symbols, t
 <text x="-5.08" y="3.81" size="1.016" layer="25" ratio="10">&gt;NAME</text>
 <text x="-5.08" y="-5.08" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<package name="22-23-2021">
+<description>.100" (2.54mm) Center Headers - 2 Pin</description>
+<wire x1="-2.54" y1="3.175" x2="2.54" y2="3.175" width="0.254" layer="21"/>
+<wire x1="2.54" y1="3.175" x2="2.54" y2="1.27" width="0.254" layer="21"/>
+<wire x1="2.54" y1="1.27" x2="2.54" y2="-3.175" width="0.254" layer="21"/>
+<wire x1="2.54" y1="-3.175" x2="-2.54" y2="-3.175" width="0.254" layer="21"/>
+<wire x1="-2.54" y1="-3.175" x2="-2.54" y2="1.27" width="0.254" layer="21"/>
+<wire x1="-2.54" y1="1.27" x2="-2.54" y2="3.175" width="0.254" layer="21"/>
+<wire x1="-2.54" y1="1.27" x2="2.54" y2="1.27" width="0.254" layer="21"/>
+<pad name="1" x="-1.27" y="0" drill="1" shape="long" rot="R90"/>
+<pad name="2" x="1.27" y="0" drill="1" shape="long" rot="R90"/>
+<text x="-2.54" y="3.81" size="1.016" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.54" y="-5.08" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="MV">
@@ -5152,6 +5210,29 @@ In this library the device names are the same as the pin names of the symbols, t
 <attribute name="MPN" value="22-23-2041" constant="no"/>
 <attribute name="OC_FARNELL" value="1462920" constant="no"/>
 <attribute name="OC_NEWARK" value="38C0355" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="22-23-2021" prefix="X">
+<description>.100" (2.54mm) Center Header - 2 Pin</description>
+<gates>
+<gate name="-1" symbol="MV" x="0" y="0" addlevel="always" swaplevel="1"/>
+<gate name="-2" symbol="M" x="0" y="-2.54" addlevel="always" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="22-23-2021">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="MOLEX" constant="no"/>
+<attribute name="MPN" value="22-23-2021" constant="no"/>
+<attribute name="OC_FARNELL" value="1462926" constant="no"/>
+<attribute name="OC_NEWARK" value="25C3832" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -9997,6 +10078,12 @@ Source: AVX .. aphvc.pdf</description>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
 <part name="PT1" library="SparkFun-Passives" deviceset="2PT_GND_TIE" device=""/>
 <part name="PT2" library="SparkFun-Passives" deviceset="2PT_GND_TIE" device=""/>
+<part name="U$11" library="bldc_lib" deviceset="NCP18XH103F03RB" device=""/>
+<part name="R32" library="adafruit" deviceset="R-US_" device="M0805" value="10K"/>
+<part name="SUPPLY24" library="supply2" deviceset="DGND" device=""/>
+<part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
+<part name="C27" library="adafruit" deviceset="C-US" device="C0805" value="2.2u"/>
+<part name="TEMP" library="con-molex" deviceset="22-23-2021" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10072,6 +10159,12 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="88.9" y1="-91.44" x2="88.9" y2="-66.04" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="88.9" y1="-66.04" x2="124.46" y2="-66.04" width="0.1524" layer="97" style="shortdash"/>
 <text x="96.52" y="-63.5" size="2.54" layer="97">Connect Grounds</text>
+<text x="7.62" y="-50.8" size="1.778" layer="97">NTC 10K</text>
+<wire x1="55.88" y1="-22.86" x2="55.88" y2="-53.34" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="55.88" y1="-53.34" x2="-5.08" y2="-53.34" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="-5.08" y1="-53.34" x2="-5.08" y2="-22.86" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="-5.08" y1="-22.86" x2="55.88" y2="-22.86" width="0.1524" layer="97" style="shortdash"/>
+<text x="30.48" y="-50.8" size="1.778" layer="97">Temperature Sensor</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="25.4" y="40.64"/>
@@ -10208,6 +10301,13 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="P+1" gate="VCC" x="66.04" y="53.34"/>
 <instance part="PT1" gate="G$1" x="99.06" y="-86.36"/>
 <instance part="PT2" gate="G$1" x="114.3" y="-86.36"/>
+<instance part="U$11" gate="G$1" x="10.16" y="-40.64"/>
+<instance part="R32" gate="G$1" x="25.4" y="-40.64"/>
+<instance part="SUPPLY24" gate="G$1" x="33.02" y="-40.64" rot="R90"/>
+<instance part="+3V2" gate="G$1" x="0" y="-40.64" rot="R90"/>
+<instance part="C27" gate="G$1" x="22.86" y="-33.02" rot="R90"/>
+<instance part="TEMP" gate="-1" x="45.72" y="-35.56" rot="R270"/>
+<instance part="TEMP" gate="-2" x="43.18" y="-35.56" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -10896,6 +10996,19 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="104.14" y1="-86.36" x2="104.14" y2="-83.82" width="0.1524" layer="91"/>
 <label x="104.14" y="-83.82" size="2.54" layer="95" rot="R90" xref="yes"/>
 </segment>
+<segment>
+<pinref part="R32" gate="G$1" pin="2"/>
+<pinref part="SUPPLY24" gate="G$1" pin="DGND"/>
+<pinref part="C27" gate="G$1" pin="2"/>
+<wire x1="27.94" y1="-33.02" x2="30.48" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="-33.02" x2="30.48" y2="-40.64" width="0.1524" layer="91"/>
+<junction x="30.48" y="-40.64"/>
+</segment>
+<segment>
+<pinref part="TEMP" gate="-1" pin="S"/>
+<wire x1="45.72" y1="-33.02" x2="45.72" y2="-30.48" width="0.1524" layer="91"/>
+<label x="45.72" y="-30.48" size="1.016" layer="95" rot="R90" xref="yes"/>
+</segment>
 </net>
 <net name="+5V" class="0">
 <segment>
@@ -11266,6 +11379,29 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="C25" gate="G$1" pin="1"/>
 <wire x1="99.06" y1="-35.56" x2="99.06" y2="-33.02" width="0.1524" layer="91"/>
 <junction x="99.06" y="-33.02"/>
+</segment>
+<segment>
+<pinref part="+3V2" gate="G$1" pin="+3V3"/>
+<pinref part="U$11" gate="G$1" pin="2"/>
+<wire x1="2.54" y1="-40.64" x2="5.08" y2="-40.64" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="TEMP" class="0">
+<segment>
+<pinref part="U$11" gate="G$1" pin="1"/>
+<pinref part="R32" gate="G$1" pin="1"/>
+<wire x1="15.24" y1="-40.64" x2="17.78" y2="-40.64" width="0.1524" layer="91"/>
+<pinref part="C27" gate="G$1" pin="1"/>
+<wire x1="17.78" y1="-40.64" x2="20.32" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="-33.02" x2="17.78" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="-33.02" x2="17.78" y2="-40.64" width="0.1524" layer="91"/>
+<junction x="17.78" y="-40.64"/>
+<label x="17.78" y="-33.02" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<pinref part="TEMP" gate="-2" pin="S"/>
+<wire x1="43.18" y1="-33.02" x2="43.18" y2="-30.48" width="0.1524" layer="91"/>
+<label x="43.18" y="-30.48" size="1.016" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 </nets>
