@@ -278,6 +278,9 @@
 <rectangle x1="0.4318" y1="-0.4318" x2="0.8382" y2="0.4318" layer="51"/>
 <rectangle x1="-0.8382" y1="-0.4318" x2="-0.4318" y2="0.4318" layer="51"/>
 </package>
+<package name="1CONN_PAD">
+<smd name="P$1" x="0" y="0" dx="6.4516" dy="3.2512" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MOSFET_N">
@@ -421,6 +424,9 @@
 <pin name="1" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="2" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 </symbol>
+<symbol name="1CONN">
+<pin name="P$1" x="-2.54" y="0" length="middle" function="dot"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="IRFS7530_HEATSINK">
@@ -562,6 +568,21 @@ NTC Thermistors 10K OHM 1%</description>
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="1CONN_SOLDER">
+<gates>
+<gate name="G$1" symbol="1CONN" x="2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="1CONN_PAD">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>
