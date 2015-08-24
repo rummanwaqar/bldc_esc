@@ -143,19 +143,19 @@
 <library name="bldc_lib">
 <packages>
 <package name="IRF7530_HEATSINK">
-<smd name="D1" x="-20.32" y="1.27" dx="19.812" dy="13.208" layer="1" rot="R90"/>
-<smd name="G1" x="-24.13" y="-13.8557" dx="0.7112" dy="3.556" layer="1"/>
-<smd name="S1" x="-22.86" y="-13.8557" dx="0.7112" dy="3.556" layer="1"/>
-<smd name="S2" x="-21.59" y="-13.8557" dx="0.7112" dy="3.556" layer="1"/>
-<smd name="S3" x="-19.05" y="-13.8557" dx="0.7112" dy="3.556" layer="1"/>
-<smd name="S4" x="-17.78" y="-13.8557" dx="0.7112" dy="3.556" layer="1"/>
-<smd name="S5" x="-16.51" y="-13.8557" dx="0.7112" dy="3.556" layer="1"/>
-<text x="-22.86" y="-5.08" size="1.27" layer="27">&gt;Value</text>
-<text x="-22.86" y="-7.62" size="1.27" layer="25">&gt;Name</text>
-<wire x1="-27.94" y1="11.43" x2="-12.7" y2="11.43" width="0.127" layer="21"/>
-<wire x1="-12.7" y1="11.43" x2="-12.7" y2="-16.51" width="0.127" layer="21"/>
-<wire x1="-12.7" y1="-16.51" x2="-27.94" y2="-16.51" width="0.127" layer="21"/>
-<wire x1="-27.94" y1="-16.51" x2="-27.94" y2="11.43" width="0.127" layer="21"/>
+<smd name="D1" x="0" y="1.27" dx="19.812" dy="13.208" layer="1" rot="R90"/>
+<smd name="G1" x="-3.81" y="-13.8557" dx="0.7112" dy="3.556" layer="1"/>
+<smd name="S1" x="-2.54" y="-13.8557" dx="0.7112" dy="3.556" layer="1"/>
+<smd name="S2" x="-1.27" y="-13.8557" dx="0.7112" dy="3.556" layer="1"/>
+<smd name="S3" x="1.27" y="-13.8557" dx="0.7112" dy="3.556" layer="1"/>
+<smd name="S4" x="2.54" y="-13.8557" dx="0.7112" dy="3.556" layer="1"/>
+<smd name="S5" x="3.81" y="-13.8557" dx="0.7112" dy="3.556" layer="1"/>
+<text x="-2.54" y="-5.08" size="1.27" layer="27">&gt;Value</text>
+<text x="-2.54" y="-7.62" size="1.27" layer="25">&gt;Name</text>
+<wire x1="-7.62" y1="11.43" x2="7.62" y2="11.43" width="0.127" layer="21"/>
+<wire x1="7.62" y1="11.43" x2="7.62" y2="-16.51" width="0.127" layer="21"/>
+<wire x1="7.62" y1="-16.51" x2="-7.62" y2="-16.51" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="-16.51" x2="-7.62" y2="11.43" width="0.127" layer="21"/>
 </package>
 <package name="DRV8302">
 <smd name="P$1" x="-3.75" y="6.75" dx="2.1" dy="0.27" layer="1"/>
@@ -263,7 +263,7 @@
 <rectangle x1="-0.8382" y1="-0.4318" x2="-0.4318" y2="0.4318" layer="51"/>
 </package>
 <package name="1CONN_PAD">
-<smd name="P$1" x="0" y="0" dx="6.4516" dy="3.2512" layer="1"/>
+<smd name="P$1" x="0" y="0" dx="6.4516" dy="4.8768" layer="1"/>
 </package>
 </packages>
 <symbols>
@@ -10112,6 +10112,8 @@ Source: AVX .. aphvc.pdf</description>
 <part name="U$16" library="bldc_lib" deviceset="1CONN_SOLDER" device=""/>
 <part name="P+14" library="supply1" deviceset="VCC" device=""/>
 <part name="SUPPLY25" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY26" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY27" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10127,9 +10129,9 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="-5.08" y1="-17.78" x2="-5.08" y2="60.96" width="0.1524" layer="97"/>
 <text x="58.42" y="63.5" size="1.778" layer="97">MOSFET</text>
 <wire x1="238.76" y1="-50.8" x2="238.76" y2="-86.36" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="238.76" y1="-86.36" x2="299.72" y2="-86.36" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="299.72" y1="-86.36" x2="299.72" y2="-25.4" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="299.72" y1="-25.4" x2="276.86" y2="-25.4" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="238.76" y1="-86.36" x2="314.96" y2="-86.36" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="314.96" y1="-86.36" x2="314.96" y2="-25.4" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="314.96" y1="-25.4" x2="276.86" y2="-25.4" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="276.86" y1="-25.4" x2="276.86" y2="-27.94" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="276.86" y1="-27.94" x2="243.84" y2="-27.94" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="243.84" y1="-27.94" x2="243.84" y2="-50.8" width="0.1524" layer="97" style="shortdash"/>
@@ -10347,6 +10349,8 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="U$16" gate="G$1" x="99.06" y="-96.52" rot="R180"/>
 <instance part="P+14" gate="VCC" x="106.68" y="-91.44"/>
 <instance part="SUPPLY25" gate="GND" x="106.68" y="-96.52" rot="R90"/>
+<instance part="SUPPLY26" gate="GND" x="66.04" y="7.62"/>
+<instance part="SUPPLY27" gate="GND" x="269.24" y="-12.7" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -10533,17 +10537,13 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="261.62" y1="0" x2="264.16" y2="0" width="0.1524" layer="91"/>
 <label x="264.16" y="0" size="1.016" layer="95" xref="yes"/>
 </segment>
-</net>
-<net name="H2_LOW" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="S"/>
-<wire x1="66.04" y1="15.24" x2="66.04" y2="2.54" width="0.1524" layer="91"/>
-<label x="66.04" y="2.54" size="1.778" layer="95" rot="R270" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U$7" gate="G$1" pin="SL_B"/>
-<wire x1="261.62" y1="-12.7" x2="264.16" y2="-12.7" width="0.1524" layer="91"/>
-<label x="264.16" y="-12.7" size="1.016" layer="95" xref="yes"/>
+<pinref part="R10" gate="G$1" pin="2"/>
+<pinref part="U$8" gate="R$1" pin="2"/>
+<wire x1="292.1" y1="-30.48" x2="294.64" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="294.64" y1="-30.48" x2="299.72" y2="-30.48" width="0.1524" layer="91"/>
+<junction x="294.64" y="-30.48"/>
+<label x="299.72" y="-30.48" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="H3_LOW" class="0">
@@ -10560,6 +10560,14 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="U$7" gate="G$1" pin="SL_C"/>
 <wire x1="261.62" y1="-25.4" x2="264.16" y2="-25.4" width="0.1524" layer="91"/>
 <label x="264.16" y="-25.4" size="1.016" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$9" gate="R$1" pin="2"/>
+<pinref part="R12" gate="G$1" pin="2"/>
+<wire x1="294.64" y1="-50.8" x2="292.1" y2="-50.8" width="0.1524" layer="91"/>
+<wire x1="294.64" y1="-50.8" x2="299.72" y2="-50.8" width="0.1524" layer="91"/>
+<junction x="294.64" y="-50.8"/>
+<label x="299.72" y="-50.8" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="GL_A" class="0">
@@ -10730,13 +10738,6 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="274.32" y1="-15.24" x2="261.62" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="U$9" gate="R$1" pin="2"/>
-<pinref part="R12" gate="G$1" pin="2"/>
-<wire x1="294.64" y1="-50.8" x2="292.1" y2="-50.8" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$11" class="0">
 <segment>
 <pinref part="R13" gate="G$1" pin="1"/>
@@ -10760,13 +10761,6 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="271.78" y1="-33.02" x2="271.78" y2="-40.64" width="0.1524" layer="91"/>
 <wire x1="271.78" y1="-40.64" x2="276.86" y2="-40.64" width="0.1524" layer="91"/>
 <junction x="276.86" y="-40.64"/>
-</segment>
-</net>
-<net name="N$25" class="0">
-<segment>
-<pinref part="R10" gate="G$1" pin="2"/>
-<pinref part="U$8" gate="R$1" pin="2"/>
-<wire x1="292.1" y1="-30.48" x2="294.64" y2="-30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$22" class="0">
@@ -10891,6 +10885,16 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="U$16" gate="G$1" pin="P$1"/>
 <wire x1="101.6" y1="-96.52" x2="104.14" y2="-96.52" width="0.1524" layer="91"/>
 <pinref part="SUPPLY25" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="S"/>
+<wire x1="66.04" y1="15.24" x2="66.04" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="SUPPLY26" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U$7" gate="G$1" pin="SL_B"/>
+<wire x1="261.62" y1="-12.7" x2="266.7" y2="-12.7" width="0.1524" layer="91"/>
+<pinref part="SUPPLY27" gate="GND" pin="GND"/>
 </segment>
 </net>
 <net name="SO2" class="0">
