@@ -279,7 +279,7 @@
 <rectangle x1="-0.8382" y1="-0.4318" x2="-0.4318" y2="0.4318" layer="51"/>
 </package>
 <package name="1CONN_PAD">
-<smd name="P$1" x="0" y="0" dx="6.4516" dy="3.2512" layer="1"/>
+<smd name="P$1" x="0" y="0" dx="6.4516" dy="4.8768" layer="1"/>
 </package>
 </packages>
 <symbols>
