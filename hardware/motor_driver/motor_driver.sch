@@ -10030,7 +10030,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="R17" library="adafruit" deviceset="R-US_" device="R0603" value="270K"/>
 <part name="R18" library="adafruit" deviceset="R-US_" device="R0603" value="10K"/>
 <part name="SUPPLY7" library="supply2" deviceset="DGND" device=""/>
-<part name="R19" library="adafruit" deviceset="R-US_" device="R0603" value="10M"/>
+<part name="R19" library="adafruit" deviceset="R-US_" device="R0603" value="1M"/>
 <part name="SUPPLY8" library="supply2" deviceset="DGND" device=""/>
 <part name="R20" library="adafruit" deviceset="R-US_" device="R0603" value="15K"/>
 <part name="R21" library="adafruit" deviceset="R-US_" device="R0603" value="220K"/>
@@ -10054,7 +10054,6 @@ Source: AVX .. aphvc.pdf</description>
 <part name="SUPPLY12" library="supply2" deviceset="DGND" device=""/>
 <part name="P+8" library="supply1" deviceset="+5V" device=""/>
 <part name="C11" library="SparkFun-Passives" deviceset="CAP" device="1206" value="10u,50V"/>
-<part name="SUPPLY13" library="supply2" deviceset="GND" device=""/>
 <part name="P+9" library="supply1" deviceset="VCC" device=""/>
 <part name="CTRL" library="con-molex" deviceset="22-23-2041" device=""/>
 <part name="C12" library="SparkFun-Passives" deviceset="CAP" device="1206" value="10u,50V"/>
@@ -10114,6 +10113,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="SUPPLY25" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY26" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY27" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY13" library="supply2" deviceset="DGND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10284,7 +10284,6 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="SUPPLY12" gate="G$1" x="142.24" y="-50.8"/>
 <instance part="P+8" gate="1" x="142.24" y="-33.02"/>
 <instance part="C11" gate="G$1" x="208.28" y="-20.32" rot="R90"/>
-<instance part="SUPPLY13" gate="GND" x="200.66" y="-17.78" rot="R180"/>
 <instance part="P+9" gate="VCC" x="218.44" y="-15.24"/>
 <instance part="CTRL" gate="-1" x="200.66" y="43.18" rot="R270"/>
 <instance part="CTRL" gate="-2" x="198.12" y="43.18" rot="R270"/>
@@ -10351,6 +10350,7 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="SUPPLY25" gate="GND" x="106.68" y="-96.52" rot="R90"/>
 <instance part="SUPPLY26" gate="GND" x="66.04" y="7.62"/>
 <instance part="SUPPLY27" gate="GND" x="269.24" y="-12.7" rot="R90"/>
+<instance part="SUPPLY13" gate="G$1" x="200.66" y="-17.78" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -10827,11 +10827,6 @@ Source: AVX .. aphvc.pdf</description>
 <junction x="294.64" y="-60.96"/>
 </segment>
 <segment>
-<pinref part="SUPPLY13" gate="GND" pin="GND"/>
-<pinref part="C11" gate="G$1" pin="1"/>
-<wire x1="200.66" y1="-20.32" x2="203.2" y2="-20.32" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="C12" gate="G$1" pin="2"/>
 <pinref part="C13" gate="G$1" pin="2"/>
 <wire x1="269.24" y1="40.64" x2="281.94" y2="40.64" width="0.1524" layer="91"/>
@@ -11071,6 +11066,11 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="TEMP" gate="-1" pin="S"/>
 <wire x1="45.72" y1="-33.02" x2="45.72" y2="-30.48" width="0.1524" layer="91"/>
 <label x="45.72" y="-30.48" size="1.016" layer="95" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<pinref part="C11" gate="G$1" pin="1"/>
+<wire x1="200.66" y1="-20.32" x2="203.2" y2="-20.32" width="0.1524" layer="91"/>
+<pinref part="SUPPLY13" gate="G$1" pin="DGND"/>
 </segment>
 </net>
 <net name="+5V" class="0">
