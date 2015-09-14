@@ -10037,8 +10037,8 @@ Source: AVX .. aphvc.pdf</description>
 <part name="R22" library="adafruit" deviceset="R-US_" device="R0603" value="3.3K"/>
 <part name="R23" library="adafruit" deviceset="R-US_" device="R0603" value="10K"/>
 <part name="R24" library="adafruit" deviceset="R-US_" device="R0603" value="18K"/>
-<part name="C6" library="adafruit" deviceset="C-US" device="C0603" value="6.8nF"/>
-<part name="C7" library="adafruit" deviceset="C-US" device="C0603" value="120pF"/>
+<part name="C6" library="adafruit" deviceset="C-US" device="C0603" value="120pF"/>
+<part name="C7" library="adafruit" deviceset="C-US" device="C0603" value="6.8nF"/>
 <part name="C8" library="adafruit" deviceset="C-US" device="C0603" value="22nF"/>
 <part name="SUPPLY9" library="supply2" deviceset="DGND" device=""/>
 <part name="P+6" library="supply1" deviceset="+5V" device=""/>
@@ -10114,6 +10114,8 @@ Source: AVX .. aphvc.pdf</description>
 <part name="SUPPLY26" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY27" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY13" library="supply2" deviceset="DGND" device=""/>
+<part name="C28" library="adafruit" deviceset="C-US" device="C0603" value="0nF"/>
+<part name="SUPPLY28" library="supply2" deviceset="DGND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10199,6 +10201,7 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="114.3" y1="-88.9" x2="114.3" y2="-101.6" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="114.3" y1="-101.6" x2="88.9" y2="-101.6" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="88.9" y1="-101.6" x2="88.9" y2="-88.9" width="0.1524" layer="97" style="shortdash"/>
+<text x="198.12" y="-39.37" size="0.4064" layer="97">will stay open for quickest start</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="25.4" y="40.64"/>
@@ -10351,6 +10354,8 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="SUPPLY26" gate="GND" x="66.04" y="7.62"/>
 <instance part="SUPPLY27" gate="GND" x="269.24" y="-12.7" rot="R90"/>
 <instance part="SUPPLY13" gate="G$1" x="200.66" y="-17.78" rot="R180"/>
+<instance part="C28" gate="G$1" x="203.2" y="-40.64" rot="R270"/>
+<instance part="SUPPLY28" gate="G$1" x="195.58" y="-40.64" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -11072,6 +11077,10 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="200.66" y1="-20.32" x2="203.2" y2="-20.32" width="0.1524" layer="91"/>
 <pinref part="SUPPLY13" gate="G$1" pin="DGND"/>
 </segment>
+<segment>
+<pinref part="C28" gate="G$1" pin="2"/>
+<pinref part="SUPPLY28" gate="G$1" pin="DGND"/>
+</segment>
 </net>
 <net name="+5V" class="0">
 <segment>
@@ -11470,6 +11479,13 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="TEMP" gate="-2" pin="S"/>
 <wire x1="43.18" y1="-33.02" x2="43.18" y2="-30.48" width="0.1524" layer="91"/>
 <label x="43.18" y="-30.48" size="1.016" layer="95" rot="R90" xref="yes"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="C28" gate="G$1" pin="1"/>
+<pinref part="U$7" gate="G$1" pin="SS_TR"/>
+<wire x1="205.74" y1="-40.64" x2="226.06" y2="-40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
