@@ -222,12 +222,6 @@
 <text x="-2.9" y="7.55" size="1.27" layer="25">&gt;Name</text>
 <smd name="GND" x="0" y="0" dx="3.61" dy="6.35" layer="1"/>
 </package>
-<package name="WSLP2726">
-<smd name="P$1@1" x="-2.4638" y="-0.889" dx="5.842" dy="2.54" layer="1" rot="R90"/>
-<smd name="P$2@1" x="2.4638" y="-0.889" dx="5.842" dy="2.54" layer="1" rot="R90"/>
-<smd name="P$1@2" x="-2.4638" y="3.1115" dx="1.016" dy="2.54" layer="1" rot="R90"/>
-<smd name="P$2@2" x="2.4638" y="3.1115" dx="1.016" dy="2.54" layer="1" rot="R90"/>
-</package>
 <package name="SOT223">
 <wire x1="3.2766" y1="1.651" x2="3.2766" y2="-1.651" width="0.2032" layer="21"/>
 <wire x1="3.2766" y1="-1.651" x2="-3.2766" y2="-1.651" width="0.2032" layer="21"/>
@@ -264,6 +258,14 @@
 </package>
 <package name="1CONN_PAD">
 <smd name="P$1" x="0" y="0" dx="6.4516" dy="4.8768" layer="1"/>
+</package>
+<package name="WSLP2726">
+<smd name="P$1" x="-2.4638" y="-0.889" dx="5.842" dy="2.54" layer="1" rot="R90"/>
+<smd name="P$2" x="2.4638" y="-0.889" dx="5.842" dy="2.54" layer="1" rot="R90"/>
+<smd name="P$3" x="-2.4638" y="3.1115" dx="1.016" dy="2.54" layer="1" rot="R90"/>
+<smd name="P$4" x="2.4638" y="3.1115" dx="1.016" dy="2.54" layer="1" rot="R90"/>
+<text x="-3.81" y="-6.35" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-3.81" y="3.81" size="1.27" layer="25">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -372,21 +374,6 @@
 <pin name="BST_A" x="17.78" y="22.86" length="middle" rot="R180"/>
 <pin name="DVDD" x="17.78" y="33.02" length="middle" rot="R180"/>
 </symbol>
-<symbol name="R_US">
-<wire x1="-2.54" y1="0" x2="-2.159" y2="1.016" width="0.2032" layer="94"/>
-<wire x1="-2.159" y1="1.016" x2="-1.524" y2="-1.016" width="0.2032" layer="94"/>
-<wire x1="-1.524" y1="-1.016" x2="-0.889" y2="1.016" width="0.2032" layer="94"/>
-<wire x1="-0.889" y1="1.016" x2="-0.254" y2="-1.016" width="0.2032" layer="94"/>
-<wire x1="-0.254" y1="-1.016" x2="0.381" y2="1.016" width="0.2032" layer="94"/>
-<wire x1="0.381" y1="1.016" x2="1.016" y2="-1.016" width="0.2032" layer="94"/>
-<wire x1="1.016" y1="-1.016" x2="1.651" y2="1.016" width="0.2032" layer="94"/>
-<wire x1="1.651" y1="1.016" x2="2.286" y2="-1.016" width="0.2032" layer="94"/>
-<wire x1="2.286" y1="-1.016" x2="2.54" y2="0" width="0.2032" layer="94"/>
-<text x="-3.81" y="1.4986" size="1.778" layer="95">&gt;NAME</text>
-<text x="-3.81" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
-</symbol>
 <symbol name="TC2117">
 <pin name="VI" x="-10.16" y="2.54" length="middle"/>
 <pin name="VOUT" x="20.32" y="2.54" length="middle" rot="R180"/>
@@ -410,6 +397,23 @@
 </symbol>
 <symbol name="1CONN">
 <pin name="P$1" x="-2.54" y="0" length="middle" function="dot"/>
+</symbol>
+<symbol name="R_SENSE">
+<wire x1="-0.762" y1="1.27" x2="-0.508" y2="-1.27" width="0.127" layer="94"/>
+<wire x1="-0.508" y1="-1.27" x2="0" y2="1.27" width="0.127" layer="94"/>
+<wire x1="0" y1="1.27" x2="0.254" y2="-1.27" width="0.127" layer="94"/>
+<wire x1="0.254" y1="-1.27" x2="0.762" y2="1.27" width="0.127" layer="94"/>
+<wire x1="0.762" y1="1.27" x2="1.016" y2="-1.27" width="0.127" layer="94"/>
+<wire x1="1.016" y1="-1.27" x2="1.524" y2="1.27" width="0.127" layer="94"/>
+<wire x1="1.524" y1="1.27" x2="1.778" y2="-1.27" width="0.127" layer="94"/>
+<wire x1="1.778" y1="-1.27" x2="2.286" y2="1.27" width="0.127" layer="94"/>
+<wire x1="2.286" y1="1.27" x2="2.54" y2="-1.27" width="0.127" layer="94"/>
+<text x="-2.54" y="2.54" size="1.27" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-5.08" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="P$1" x="5.08" y="-1.27" visible="off" length="short" rot="R180"/>
+<pin name="P$2" x="-3.048" y="-1.27" visible="off" length="short"/>
+<pin name="P$3" x="4.826" y="1.27" visible="off" length="short" rot="R180"/>
+<pin name="P$4" x="-3.302" y="1.27" visible="off" length="short"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -504,26 +508,6 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="WSLP2726">
-<description>&lt;h1&gt;WSLP2726&lt;/h1&gt;
-
-Power Metal Strip® Resistors, Very High Power (to 7 W),
-Low Value (down to 0.0003 ), Surface Mount</description>
-<gates>
-<gate name="R$1" symbol="R_US" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="WSLP2726">
-<connects>
-<connect gate="R$1" pin="1" pad="P$1@1 P$1@2"/>
-<connect gate="R$1" pin="2" pad="P$2@1 P$2@2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="TC2117">
 <gates>
 <gate name="G$1" symbol="TC2117" x="-5.08" y="0"/>
@@ -567,6 +551,28 @@ NTC Thermistors 10K OHM 1%</description>
 <device name="" package="1CONN_PAD">
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="WSLP2726">
+<description>&lt;h1&gt;WSLP2726&lt;/h1&gt;
+
+Power Metal Strip® Resistors, Very High Power (to 7 W),
+Low Value (down to 0.0003 ), Surface Mount</description>
+<gates>
+<gate name="G$1" symbol="R_SENSE" x="-1.016" y="0"/>
+</gates>
+<devices>
+<device name="" package="WSLP2726">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
+<connect gate="G$1" pin="P$4" pad="P$4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -10007,8 +10013,6 @@ Source: AVX .. aphvc.pdf</description>
 <part name="R11" library="adafruit" deviceset="R-US_" device="R0603" value="100R"/>
 <part name="R12" library="adafruit" deviceset="R-US_" device="R0603" value="100R"/>
 <part name="R13" library="adafruit" deviceset="R-US_" device="R0603" value="100R"/>
-<part name="U$8" library="bldc_lib" deviceset="WSLP2726" device=""/>
-<part name="U$9" library="bldc_lib" deviceset="WSLP2726" device=""/>
 <part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="supply2" deviceset="GND" device=""/>
 <part name="CURR" library="con-molex" deviceset="22-23-2051" device=""/>
@@ -10114,6 +10118,8 @@ Source: AVX .. aphvc.pdf</description>
 <part name="SUPPLY26" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY27" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY13" library="supply2" deviceset="DGND" device=""/>
+<part name="U$8" library="bldc_lib" deviceset="WSLP2726" device=""/>
+<part name="U$9" library="bldc_lib" deviceset="WSLP2726" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10226,8 +10232,6 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="R11" gate="G$1" x="287.02" y="-40.64"/>
 <instance part="R12" gate="G$1" x="287.02" y="-50.8"/>
 <instance part="R13" gate="G$1" x="287.02" y="-60.96"/>
-<instance part="U$8" gate="R$1" x="294.64" y="-35.56" rot="R90"/>
-<instance part="U$9" gate="R$1" x="294.64" y="-55.88" rot="R90"/>
 <instance part="SUPPLY1" gate="GND" x="294.64" y="-43.18"/>
 <instance part="SUPPLY2" gate="GND" x="294.64" y="-63.5"/>
 <instance part="CURR" gate="-1" x="256.54" y="-73.66" rot="R90"/>
@@ -10351,6 +10355,8 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="SUPPLY26" gate="GND" x="66.04" y="7.62"/>
 <instance part="SUPPLY27" gate="GND" x="269.24" y="-12.7" rot="R90"/>
 <instance part="SUPPLY13" gate="G$1" x="200.66" y="-17.78" rot="R180"/>
+<instance part="U$8" gate="G$1" x="293.878" y="-35.56" rot="R90"/>
+<instance part="U$9" gate="G$1" x="293.878" y="-55.88" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -10539,11 +10545,11 @@ Source: AVX .. aphvc.pdf</description>
 </segment>
 <segment>
 <pinref part="R10" gate="G$1" pin="2"/>
-<pinref part="U$8" gate="R$1" pin="2"/>
-<wire x1="292.1" y1="-30.48" x2="294.64" y2="-30.48" width="0.1524" layer="91"/>
-<wire x1="294.64" y1="-30.48" x2="299.72" y2="-30.48" width="0.1524" layer="91"/>
-<junction x="294.64" y="-30.48"/>
+<wire x1="292.1" y1="-30.48" x2="295.148" y2="-30.48" width="0.1524" layer="91"/>
 <label x="299.72" y="-30.48" size="1.778" layer="95" xref="yes"/>
+<pinref part="U$8" gate="G$1" pin="P$1"/>
+<wire x1="295.148" y1="-30.48" x2="299.72" y2="-30.48" width="0.1524" layer="91"/>
+<junction x="295.148" y="-30.48"/>
 </segment>
 </net>
 <net name="H3_LOW" class="0">
@@ -10562,12 +10568,12 @@ Source: AVX .. aphvc.pdf</description>
 <label x="264.16" y="-25.4" size="1.016" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$9" gate="R$1" pin="2"/>
 <pinref part="R12" gate="G$1" pin="2"/>
-<wire x1="294.64" y1="-50.8" x2="292.1" y2="-50.8" width="0.1524" layer="91"/>
-<wire x1="294.64" y1="-50.8" x2="299.72" y2="-50.8" width="0.1524" layer="91"/>
-<junction x="294.64" y="-50.8"/>
+<wire x1="292.1" y1="-50.8" x2="295.148" y2="-50.8" width="0.1524" layer="91"/>
 <label x="299.72" y="-50.8" size="1.778" layer="95" xref="yes"/>
+<pinref part="U$9" gate="G$1" pin="P$1"/>
+<wire x1="295.148" y1="-50.8" x2="299.72" y2="-50.8" width="0.1524" layer="91"/>
+<junction x="295.148" y="-50.8"/>
 </segment>
 </net>
 <net name="GL_A" class="0">
@@ -10814,17 +10820,17 @@ Source: AVX .. aphvc.pdf</description>
 <net name="GND" class="0">
 <segment>
 <pinref part="R11" gate="G$1" pin="2"/>
-<pinref part="U$8" gate="R$1" pin="1"/>
-<wire x1="292.1" y1="-40.64" x2="294.64" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="292.1" y1="-40.64" x2="292.608" y2="-40.64" width="0.1524" layer="91"/>
 <pinref part="SUPPLY1" gate="GND" pin="GND"/>
-<junction x="294.64" y="-40.64"/>
+<pinref part="U$8" gate="G$1" pin="P$4"/>
+<wire x1="292.608" y1="-40.64" x2="294.64" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="292.608" y1="-38.862" x2="292.608" y2="-40.64" width="0.1524" layer="91"/>
+<junction x="292.608" y="-40.64"/>
 </segment>
 <segment>
-<pinref part="U$9" gate="R$1" pin="1"/>
 <pinref part="R13" gate="G$1" pin="2"/>
 <wire x1="294.64" y1="-60.96" x2="292.1" y2="-60.96" width="0.1524" layer="91"/>
 <pinref part="SUPPLY2" gate="GND" pin="GND"/>
-<junction x="294.64" y="-60.96"/>
 </segment>
 <segment>
 <pinref part="C12" gate="G$1" pin="2"/>
